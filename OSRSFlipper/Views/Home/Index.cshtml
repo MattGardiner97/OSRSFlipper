@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Scripts
+{
+    <script src="@Url.Content("~/js/ItemTable.jsx")"></script>
+    <script src="@Url.Content("~/js/CountdownLabel.jsx")"></script>
+    <script src="@Url.Content("~/js/Home/Index.jsx")"></script>
+}
+
+<div class="@(ViewData.IsLoggedIn() ? "" : "d-none")">
+    <h2>Favourites</h2>
+    <div id="FavouritesTableContainer">
+
+    </div>
+</div>
+
+<div>
+    <h2>All Items</h2>
+
+    <div id="CountdownContainer" class="float-end">
+
+    </div>
+
+    <div id="MarginTableContainer">
+
+    </div>
+</div>

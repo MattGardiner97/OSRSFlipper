@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Scripts
+{
+    <script src="@Url.Content("~/js/Components/CollectionForm.jsx")"></script>
+    <script src="@Url.Content("~/js/SkillCalculator/Edit.jsx")"></script>
+}
+
+<div>
+    <select id="SkillNameDropdown" onchange="SkillNameDropdownChangeHandler()">
+    </select>
+    <div class="float-end">
+        <button class="btn btn-primary" onclick="SaveButtonClickHandler()">Save</button>
+    </div>
+</div>
+
+<div id="SkillsForm">
+
+</div>

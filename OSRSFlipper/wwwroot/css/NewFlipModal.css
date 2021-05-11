@@ -1,0 +1,17 @@
+﻿.itemDropdown{
+    position:absolute;
+    background:white;
+    border:1px solid darkgray;
+    padding:0;
+    list-style:none;
+}
+
+.itemDropdownLine{
+    cursor:pointer;
+    padding:0.1rem 1rem;
+}
+
+.itemDropdownLine:hover{
+    background-color:var(--primary-color);
+}
+

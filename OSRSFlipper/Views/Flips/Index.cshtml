@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Flips";
+}
+
+@section Scripts{
+    <script src="@Url.Content("~/js/NewFlipModal.jsx")"></script>
+    <script src="@Url.Content("~/js/ItemTable.jsx")"></script>
+    <script src="@Url.Content("~/js/Flips/Index.jsx")"></script>
+}
+
+<div id="NewFlipModalContainer">
+
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NewFlipModal" onclick="NewFlipButtonClickHandler()">
+    New Flip
+</button>
+
+<div>
+    <div class="row">
+        <div class="col-3 mx-auto d-flex">
+            <div class="flex-grow-1 text-center pe-1" style="border-right:1px solid black;">
+                <h5 class="card-text">All Time Profit</h5>
+                <h2 id="AllTimeProfit" class="card-title"></h2>
+            </div>
+            <div class="flex-grow-1 text-center ps-1">
+                <h5 class="card-text">Average Profit</h5>
+                <h2 id="AverageProfit" class="card-title"></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<div class="d-flex">
+    <div class="flex-grow-1 mx-3" style="flex-basis:0;">
+        <h4>Top Flips</h4>
+        <div id="TopFlipsTable"></div>
+    </div>
+    <div class="flex-grow-1 mx-3" style="flex-basis:0;">
+        <h4>Top Items</h4>
+        <div id="TopItemsTable"></div>
+    </div>
+</div>
+
+<div id="AllFlipsTable">
+
+</div>

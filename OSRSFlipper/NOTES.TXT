@@ -1,0 +1,5 @@
+﻿Add ActionLink type to ItemTable
+
+Add + Favourite and Record Flip ActionLink to table
+Added favourite items table above all items table
+favourites sync every ~30 seconds, state updated locally on action link click
