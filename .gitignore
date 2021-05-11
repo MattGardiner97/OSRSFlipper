@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+OSRSFlipper/appsettings.json
+OSRSFlipper/appsettings.Development.json
